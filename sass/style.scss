@@ -15,6 +15,29 @@ body {
     margin: 0 auto;
     padding: 80px 20px;
 }
+.row {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h2 + p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 5px auto 55px;
+}
+h2, h3 {
+    font-weight: bold;
+    margin: 0;
+}
+h2 {
+    font-size: 38px;
+}
+p {
+    margin: 10px auto;
+    font-weight: 100;
+    font-size: 13px;
+    color: #747d8c;
+}
 /* Background-head */
 .section-one {
     position: relative;
@@ -98,30 +121,7 @@ body {
 /*services*/
 .services {
     align-items: center;
-    .row {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    h2 + p {
-        font-size: 16px;
-        font-weight: 400;
-        font-style: italic;
-        margin: 5px auto 55px;
-    }
-    h2, h3 {
-        font-weight: bold;
-        margin: 0;
-    }
-    h2 {
-        font-size: 38px;
-    }
     text-align: center;
-    p {
-        margin: 10px auto;
-        font-weight: 100;
-        font-size: 13px;
-        color: #747d8c;
-    }
     i {
         font-size: 36px;
         margin-bottom: 22px;
@@ -134,5 +134,38 @@ body {
     .box a {
         font-size: 0;
         color: $color-main;
+    }
+}
+/*Portfolio*/
+.portfolio {
+    background-color: #dfe4ea;
+    text-align: center;
+    p {
+        font-style: italic;
+    }
+
+    .row {
+        .card {
+            height: 400px;
+            margin-bottom: 155px;
+            background-color: #ffffff;
+        }
+        .card-body {
+            background: white;
+            margin: 0;
+            padding: 15px 5px;
+            p {
+                margin: 2px 0;
+            }
+        }
+        .card-image {
+            height: 100%;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
     }
 }
